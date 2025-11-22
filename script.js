@@ -2,7 +2,7 @@ let cardContainer = document.querySelector(".card-container");
 let dados = [];
 
 async function iniciarBusca() {
-    let resposta = await fetch("Data.json");
+    let resposta = await fetch("data.json");
     dados = await resposta.json();
 
     let termoBusca = document.querySelector("input[type='text']").value.toLowerCase();
